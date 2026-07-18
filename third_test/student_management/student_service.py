@@ -23,7 +23,7 @@ def find_student(students, name):
         return False, "姓名无效"
     for student in students:
         if student["name"] == name.strip():
-            return True,f"学生：{student['name']},成绩：{student['score']}"
+            return True,student
     return False,"未找到"
 
 def update_score(students, name, new_score):
